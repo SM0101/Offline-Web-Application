@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web SQL</title>
+    <link rel="stylesheet" href="../CSS/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/webSql.css">
+</head>
+<body>
+      <!-- nav-bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="../index.html">Storages</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  href="indexedDB.html">IndexedDB Storage</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="webSql.html">WebSQL Storage</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="localStorage.html">Local Storage</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sessionStorage.html">Session Storage</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+   <!-- content -->
+    <div id="container" class="container">
+        <section id="input" class="col-4">
+            <h2>Add Contacts</h2>
+
+            <label for="firstName">First Name: </label>
+            <input type="text" id="firstName" name="firstName" />
+
+            <label for="lastName">Last Name: </label>
+            <input type="text" id="lastName" name="lastName" />
+
+            <label for="phoneNumber">Phone Number: </label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" />
+
+            <section id="target">
+              <p>Drag and drop files here...</p>
+            </section>
+              <table id="filesTable">
+                <thead>
+                    <tr id="headerRow">
+                        <th> Name </th>
+                        <th> Type </th>
+                        <th> Download </th>
+                    </tr>
+                </thead>
+            </table>
+
+            <button onclick="addContact()">Add</button>
+              <input type="button" value="Update Record" onclick="save()" />
+              <input type="hidden" id="id">
+          </div> 
+        </section>
+
+        <section id="output" class="col-7">
+            <h2>View Contacts</h2>
+            <table id="contacts" cellspacing="0" style="width:100%">
+                <tr>
+                    <th>ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Phone Number</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </tr>
+            </table>
+        </section>        
+
+    </div>
+
+    <script src="../Scripts/jQuery-3.1.1.min.js"></script>
+    <script src="../Scripts/bootstrap.min.js"></script>
+    <script src="../Scripts/webSqlScript.js"></script>
+    <script src="../Scripts/webSqlDD.js"></script>
+</body>
+</html>

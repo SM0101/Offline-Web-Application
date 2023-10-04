@@ -1,0 +1,124 @@
+.nav-link:hover, .nav-link:focus, .nav-link.active {
+  color: yellow !important;
+}
+
+.nav-link{
+  color: whitesmoke !important;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+  
+#container {
+max-width: 900px;
+margin:10px 5px;
+
+}
+
+section {
+margin-bottom: 20px;
+padding: 40px;
+}
+
+#input{
+  float: left;
+}
+
+#output{
+  float: left;
+  margin-left: 50px;
+}
+
+section h2 {
+font-size: 24px;
+margin-bottom: 10px;
+}
+
+label {
+display: block;
+margin-bottom: 5px;
+font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"] {
+padding: 5px;
+width: 200px;
+margin-bottom: 10px;
+}
+
+button {
+margin-top: 10px;
+background-color: #12fc45;
+color: black;
+cursor: pointer;
+}
+
+input[type="button"]{
+margin-top:10px;
+background-color: #0c08e7;
+color: #fff;
+cursor: pointer;
+}
+
+
+input[type="button"]:hover {
+background-color: #3e8e41;
+}
+
+button:hover {
+background-color: #3e8e41;
+}
+
+table {
+
+border: 1px solid black;
+}
+
+th,
+td {
+padding: 10px;
+text-align: left;
+border: 1px solid black;
+}
+
+th {
+background-color: #16a1f1;
+color: white;
+}
+
+td button {
+padding: 5px 10px;
+background-color: #4CAF50;
+color: #fff;
+border: none;
+cursor: pointer;
+}
+
+td button:hover {
+background-color: #3e8e41;
+}
+
+input[type="hidden"] {
+display: none;
+}
+
+#target {
+border: 1px solid skyblue;
+height: 100px;
+width: 212px;
+text-align: center;
+margin-top: 20px;
+}
+
+#filesTable table, th, td {
+  text-align: center;
+  padding: 3px;
+  }
+

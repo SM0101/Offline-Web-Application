@@ -1,0 +1,60 @@
+.nav-link:hover, .nav-link:focus, .nav-link.active {
+    color: yellow !important;
+}
+
+.nav-link{
+    color: whitesmoke !important;
+}
+
+*{
+    font-family: Arial, sans-serif;
+    margin: 0 0;
+    padding: 0 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+.container  #table {
+    float: right;
+    clear: both;
+    width: 50%;
+    padding-top: 40px;
+}
+
+.container  #table tr th {
+    padding: 10px;
+    border: 1;
+}
+
+.container #editContact {
+    float: left;
+    clear: both;
+    width: 50%;
+    padding-left: 30px;
+}
+
+.edit {
+    text-decoration:none;
+}
+
+.delete {
+    color: red;
+    text-decoration:none;
+}
+
+#target {
+    border: none;
+    height: 100px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#filesTable table, th, td {
+text-align: center;
+border: 1px solid black;
+padding: 3px;
+}
+

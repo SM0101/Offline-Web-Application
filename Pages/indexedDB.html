@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IndexedDB Storage</title>
+    <link rel="stylesheet" href="../CSS/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/indexedDB.css">
+</head>
+<body> 
+    <!-- nav-bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+          <a class="navbar-brand" href="../index.html">Storages</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="indexedDB.html">IndexedDB Storage</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="webSql.html">WebSQL Storage</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="localStorage.html">Local Storage</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sessionStorage.html">Session Storage</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+  <!-- content -->
+  <div class="container pt-5">
+
+    <div class="row">
+
+      <div id="editContact" class="col-4 row align-items-center" >
+          <h2 id="currentAction"></h2>
+          
+          <div class="mb-8 col-6" >
+              <label for="firstName" class="form-label">First Name:</label>
+              <input type="text" class="form-control" id="firstName" name="firstName" />
+          </div>
+          <div class="mb-8 col-6" >
+              <label for="lastName" class="form-label">Last Name: </label>
+              <input type="text" class="form-control" id="lastName" name="lastName" />
+          </div>
+          <div class="mb-8 col-6" >
+              <label for="age" class="form-label">Age: </label>
+              <input type="number" class="form-control" id="age" name="age" />
+          </div>
+          <div class="mb-8 col-6" >
+              <label for="email" class="form-label">Email Address: </label>
+              <input type="email" class="form-control" id="email" name="email" />
+          </div>
+          <div class="mb-8 col-6" >
+              <label for="mobileNumber" class="form-label">Mobile Number: </label>
+              <input type="text" class="form-control" id="mobileNumber" name="mobileNumber" />
+          </div>
+          <div class="mb-8 col-6" >
+              <label for="address" class="form-label">Address: </label>
+              <input type="text" class="form-control" id="address" name="address" />
+          </div>
+
+          <div class="m-2 col form-control">
+            <div id="target">
+              <p>Drag and drop files here...</p>
+              </div>
+              <table id="filesTable">
+                <thead>
+                    <tr id="headerRow">
+                        <th> Name </th>
+                        <th> Type </th>
+                        <th> Size </th>
+                        <th> Download </th>
+                    </tr>
+                </thead>
+            </table>
+          </div>
+
+          <div class="buttons">
+              <button type="button" id="btnSave" name="btnSave" class="btn btn-success mt-2">Save</button>
+          </div>
+      </div>
+
+      <div class="col-6 row align-items-top">
+          <div id="table" >
+              <table id="contacts" class="table table-bordered table-responsive">
+                  <thead>
+                      <tr>
+                          <th>Name</th>
+                          <th>Email</th>
+                          <th>Age</th>
+                          <th>Mobile</th>
+                          <th>Address</th>
+                          <th>Edit</th>
+                          <th>Delete</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+
+                  </tbody>
+              </table>
+          </div>
+      </div>
+
+    </div>
+
+  </div>
+
+    <script src="../Scripts/jQuery-3.1.1.min.js"></script>
+    <script src="../Scripts/bootstrap.min.js"></script>
+    <script src="../Scripts/indexedDB.js"></script>
+    <script src="../Scripts/indexeddbDD.js"></script>
+</body>
+</html>
